@@ -1,0 +1,176 @@
+/* Google Fonts - Poppins*/
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@700;900&family=Poppins:wght@400;500;700&display=swap");
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Poppins;
+  background-size: cover;
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(0deg, #dff3f1, #e6e9e9);
+}
+
+h2 {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+section.container {
+  height: 100%;
+  display: flex;
+  width: 50%;
+  align-items: center;
+  justify-content: center;
+}
+
+.img-holder {
+  width: 90%;
+  max-width: 450px;
+}
+
+.img-holder .p2 {
+  display: none;
+}
+
+.Logo {
+  width: 77.33px;
+  height: 80px;
+}
+
+.custom-form {
+  width: 90%;
+  max-width: 600px;
+  padding: 40px;
+  height: max-content;
+  background-color: white;
+  box-shadow: 0px 4px 50px 0px rgba(4, 8, 19, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.content-row {
+  display: flex;
+  gap: 20px;
+}
+
+.input-box {
+  width: 100%;
+}
+
+.input-box input,
+select {
+  height: 40px;
+  width: 100%;
+  border: 1px solid rgb(216, 216, 216);
+  border-radius: 5px;
+  outline: none;
+  margin-top: 10px;
+  padding-left: 10px;
+}
+
+.input-box label {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.input-box input::is(:focus, :valid) {
+  box-shadow: 0px 4px 50px 0px rgba(4, 8, 19, 0.1);
+}
+
+.password-box {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  border: 1px solid rgb(216, 216, 216);
+  border-radius: 5px;
+  padding-right: 10px;
+  margin-top: 10px;
+}
+
+#password-input {
+  border: none;
+  margin-top: 0px;
+}
+
+.gender-category label {
+  padding: 0 20px 0 5px;
+}
+
+.gender-category label,
+.gender-category input {
+  cursor: printer;
+}
+
+.button-container {
+  padding: 10px;
+  background: rgba(46, 196, 182, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+button {
+  background: none;
+  border: none;
+  color: white;
+}
+
+.alert {
+  font-size: 12px;
+  display: grid;
+  place-content: center;
+}
+
+.term-link {
+  color: rgba(46, 196, 182, 1);
+}
+
+@media screen and (max-width: 430px) {
+  body {
+    flex-direction: column;
+    gap: 20px;
+    padding: 15px;
+  }
+
+  section.container {
+    display: block;
+    width: 100%;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  .img-holder .p1 {
+    display: none;
+  }
+
+  .img-holder .p2 {
+    display: block;
+  }
+
+  .custom-form {
+    width: auto;
+    padding: 10px;
+    gap: 20px;
+  }
+
+  .content-row {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .alert {
+    text-align: center;
+  }
+}
